@@ -77,3 +77,22 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   config.hosts.clear
 end
+
+#1章
+#「rails new meshiterro」実行
+#config/environments/development.rb内一番下のendの上に「config.hosts.clear」と記述
+#「rails g controller homes top」実行
+#config/routes.rb内に「get 'homes/top'」と「root to: "homes#top"」追加
+#app/views/homes/top.html.erb内に「<h1>Topページ</h1>」追加・P内は中身だけ消す。
+#「rails active_storage:install」実行
+#「rails db:migrate」実行
+#Gemfile内の「# gem 'image_processing', '~> 1.2'」の下に「gem 'image_processing', '~>1.2'」追加
+#「bundle install」実行
+#config/environments/development.rb内「config.active_record.verbose_query_logs = true」の下に
+ #「config.active_job.queue_adapter = :inline」追加
+#5-1の下の「画像」クリック、ダウンロード
+#app/assets内にドラック&ドロップ(Overwrite か Skip を訊かれたときは、Overwrite を指定)
+
+#2章
+
+#3章
